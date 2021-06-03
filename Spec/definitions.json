@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/WFBFA/Spec/blob/main/definitions.json",
+	"title": "Common definitions",
+	"definitions": {
+		"coordinates": {
+			"type": "array",
+			"description": "GeoJSON coordinates",
+			"minItems": 2,
+			"maxItems": 2,
+			"items": {
+				"type": "number"
+			}
+		},
+		"l0cati0n": {
+			"description": "Location of an entity within road network (either the ID of the node on the graph, or cooridates that resolve to the closest node)",
+			"oneOf": [
+				{
+					"$ref": "#/defintions/coordinates"
+				},
+				{
+					"type": "string",
+					"description": "ID of the node on road graph"
+				}
+			]
+		}
+	}
+}

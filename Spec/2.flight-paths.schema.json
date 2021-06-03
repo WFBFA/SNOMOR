@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/WFBFA/Spec/blob/main/2.flight-paths.schema.json",
+	"title": "Flight paths along the road graph for the surveillance vehicles.",
+	"type": "array",
+	"items": {
+		"type": "array",
+		"description": "Flight path for the respective vehicle. Start and end points correspond to the initial location of the vehicle.",
+		"items": {
+			"type": "object",
+			"description": "next path segment",
+			"properties": {
+				"node": {
+					"type": "string",
+					"description": "ID of the (next) node in the road graph"
+				},
+				"discriminator": {
+					"type": "string",
+					"description": "road discriminator"
+				}
+			},
+			"required": [
+				"node"
+			]
+		}
+	}
+}

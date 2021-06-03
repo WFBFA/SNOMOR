@@ -1,0 +1,32 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/WFBFA/Spec/blob/main/4.sidewalk-paths.schema.json",
+	"title": "Paths along the road graph for the sidewalk cleaning vehicles.",
+	"type": "array",
+	"items": {
+		"type": "array",
+		"description": "Path for the respective vehicle. Start and end points correspond to the initial location of the vehicle.",
+		"items": {
+			"type": "object",
+			"description": "Next path segment",
+			"properties": {
+				"node": {
+					"type": "string",
+					"description": "ID of the (next) node in the road graph"
+				},
+				"discriminator": {
+					"type": "string",
+					"description": "road discriminator"
+				},
+				"side": {
+					"type": "string",
+					"enum": ["left", "right"],
+					"description": "Side of the road wrt road graph (iff ambiguous ⇔ the segment has sidewalks on both sides)"
+				}
+			},
+			"required": [
+				"node"
+			]
+		}
+	}
+}
