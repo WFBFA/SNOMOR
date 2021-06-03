@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/WFBFA/Spec/blob/main/4.vehicles.schema.json",
+	"title": "Configuration of ❄ removal vehicles",
+	"type": "object",
+	"description": "Configuration of ❄ removal vehicles",
+	"properties": {
+		"road": {
+			"type": "array",
+			"description": "Road 🔥 vehicles locations",
+			"items": {
+				"$ref": "defininitions.json#/definitions/l0cati0n"
+			}
+		},
+		"sidewalk": {
+			"type": "array",
+			"description": "Sidewalk 🔥 vehicles locations",
+			"items": {
+				"$ref": "defininitions.json#/definitions/l0cati0n"
+			}
+		}
+	},
+	"required": [
+		"road",
+		"sidewalk"
+	]
+}

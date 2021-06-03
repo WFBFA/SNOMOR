@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "haversine-distance": "^1.2.1",
+    "osm-read": "^0.7.0",
+    "yargs": "^17.0.1"
+  }
+}
