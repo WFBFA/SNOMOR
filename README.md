@@ -1,7 +1,8 @@
 # Snomor
 
 This application contains the 3 softwares at the core of our project.
-For more information please refer to the different software's specific READMEs
+For more information please refer to the different software's specific READMEs.
+
 Here is an overview :
 
 - Spec contains all the relevant specifications about the formats our solution uses
