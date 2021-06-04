@@ -1,0 +1,12 @@
+recycle: ExpensiveToCheap
+clearing: All
+reorder: RandomReorder
+realloc: No
+slowdown: 2
+weight_total: 1
+weight_max: 10
+annealing:
+  main_iterations: 2
+  ft_iterations: 2
+  starting_temperature: 1000
+  cooling_factor: 0.3
