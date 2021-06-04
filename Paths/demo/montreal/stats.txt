@@ -1,6 +1,0 @@
-Road graph: 25224 nodes 40299 edges
-Drones: 10
-Vehicles: 10
-lrive:
-  roads: 20169
-  sidewalks: 2164
